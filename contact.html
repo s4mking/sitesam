@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<META NAME="Language" CONTENT="fr">
+	<META NAME="Author" CONTENT="Simonney Samuel">
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Contact</title>
+</head>
+	<body>
+	   <nav class="menu_haut" role="navigation">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="#">Le règne</a>
+           <ul class="dropdown">
+              <li><a href="militaire.html">Réalisations militaires</a></li>
+              <li><a href="civile.html">Réalisations civiles</a></li>
+            </ul>
+            <li><a href="#">Personnages</a>
+            <ul class="dropdown">
+              <li><a href="famille.html">La famille</a></li>
+              <li><a href="armee.html">L'armée</a></li>
+            </ul>
+            </li>
+           <li><a href="contact.html">Contact</a></li>
+       </ul>
+    </nav>
+<div class="container">
+<div class="contact">
+  <h1>Contact</h1>
+
+  <form class="formcontact" method="post" action="">
+       <label for="lastname">Nom : </label>
+       <input type="text" class="nom_contact" name="lastname" required minlength="1"><br>
+       <label for="firstname">Prénom : </label>
+       <input type="text" name="firstname" required minlength="1"><br>
+       <label for="email">Email : </label>
+       <input type="email" name="email" required><br>
+      <label>Votre titre : </label>
+      <select required>
+         <option value="marechal">Maréchal</option>
+        <option value="general">Général</option>
+        <option value="trouffion">Trouffion</option>
+        <option value="Civil">Civil</option>
+      </select><br>
+       <label for="birthdate">Date de naissance : </label>
+      <input type="date" name="birthdate" required><br>
+      <label for="birthdate">Votre message : </label>
+       <textarea rows="4" cols="50" name="message" placeholder="Votre message">
+
+      </textarea><br>
+       <input class="bouton_contact" type="submit" value="Envoyer">
+   </form>
+</div>
+		</div>
+	</body>
+</html>
+
+
+						
+						

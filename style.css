@@ -1,0 +1,641 @@
+ body{
+  background-image: url("images/sacre2.jpg");
+  background-size: cover;
+  background-attachment: fixed; 
+ }
+ a {
+  text-decoration: none;
+}
+/*Style du menu du haut*/
+body .container a{
+  color:#621706;
+}
+.menu_haut ul li{
+  font-family: andale mono,monospace;
+}
+.menu_haut ul {
+  background: #3b5449;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 5px 5px;
+}
+nav ul li{
+width:140px;
+text-align: center;
+}
+.menu_haut ul li ul li {
+    clear: both;
+  width:140px;
+}
+.menu_haut li {
+      position: relative;
+      padding: 1rem;
+  z-index: 99;
+    text-decoration: none;
+  transition-duration: 1s;
+  background: #3b5449;
+    display: block;
+    float: left;
+  text-align: center;
+}
+  
+.menu_haut li a {
+  color: #FAF604;
+}
+
+.menu_haut li:hover,
+.menu_haut li:focus-within {
+    background: darkorange;
+    cursor: pointer;
+}
+
+.menu_haut li:focus-within a {
+  outline: none;
+}
+
+.menu_haut ul li ul {
+  opacity: 0;
+    transition: all 0.5s ease;
+  min-width: 5rem;
+    position: absolute;
+  margin-top: 1rem;
+    visibility: hidden;
+    left: 0;
+  display: none;
+}
+
+
+.menu_haut ul li:hover > ul,
+.menu_haut ul li:focus-within > ul,
+.menu_haut ul li ul:hover{
+  visibility: visible;
+  opacity: 1;
+  display: block
+}
+
+/*Style du formulaire de contact */
+.contact h1{
+  text-align: center;
+  padding-top:10px;
+}
+.contact{
+width:550px;
+height: 574px;
+background-color:#F8ebb9;
+border-radius:20px 20px;
+margin:0 auto;
+}
+
+.formcontact label{
+display: inline-block;
+  width: 150px;
+  text-align: right;
+  margin-right: 50px;
+}
+.formcontact .nom_contact{
+  margin-top:30px;
+}
+
+.formcontact input{
+  box-sizing: border-box;
+  width : 200px;
+  font:1em sans-serif;
+  margin-bottom: 7%;
+}
+.bouton_contact{
+  margin-left:12.7em;
+  border-radius: 20px 20px;
+  margin-top:30px;
+}
+.formcontact select{
+  margin-bottom: 7%;
+}
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+textarea{
+  vertical-align: middle;
+  height:8em;
+}
+
+/*Style de la page d'accueil*/
+.napo_cheval{
+  width:300px;
+  height:400px;
+  transition: transform .2s;
+  display: inline;
+  float: left;
+  margin-right:10px;
+  border-radius: 10px 10px;
+}
+.napo_cheval:hover,
+.napo_trone:hover {
+    transform: scale(2.5); 
+}
+.napo_trone{
+  width:250px;
+  height:400px;
+  transition: transform .2s;
+  display: inline;
+  float: right;
+  margin-left:10px;
+  border-radius: 10px 10px;
+
+}
+body .container{
+width:70%;
+margin:0 auto; 
+position: relative;
+background-color: rgba(255,255,255,0.8);
+border-radius: 10px 10px; 
+margin-top:5%;
+padding:3%;
+}
+
+body h1{
+  margin-left:5%;
+  margin-bottom:5%;
+  color:#CC5500;
+}
+body p{
+  padding-left:5%;
+  padding-right:5%;
+}
+
+/*Style Réalisation militaires*/
+
+.tableau_guerre th,
+.tableau_guerre td{
+  padding:2%;
+}
+td, th {
+border: 2px solid #6495ed;
+width: 15%;
+}
+.tableau_guerre table{
+  width:100%; 
+  text-align: center;
+  border-collapse: collapse;
+  border-radius:10px 10px;
+}
+.tableau_guerre table tr td:first-child{
+  font-weight: bold;
+  width:10%;
+}
+.tableau_guerre table tr td:nth-child(3){
+  width:10%;
+}
+.tableau_guerre table tr td:last-child,
+.tableau_guerre table tr td:nth-child(5){
+  width:20%;
+}
+.tableau_guerre p{
+  font-size:18px;
+}
+.tableau_guerre div{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+}
+.tableau_guerre video{
+  float:left;
+  width:50%;
+}
+.rouge{
+  color:red;
+}
+.bleu{
+  color:blue;
+}
+.tableau_guerre table .defaite{
+background-color: rgba(255,32,3,0.2);
+}
+
+.tableau_guerre table .victoire{
+  background-color: rgba(1,32,255,0.2);
+}
+
+body .waterloo{
+width: 50%;
+}
+  .tableau_guerre p{
+   width:50%;
+  }
+
+/* Style armée*/
+.galerie_marechaux{
+  display: inline-block;
+}
+
+.galerie_marechaux > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+  width:24%;
+}
+
+.galerie_marechaux > div > img {
+  display: block;
+  width: 280px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+.marechal:hover .hover {
+  opacity: 1;
+}
+.marechal .hover {
+  opacity: 0;
+  transition: .10s linear;
+  background-color: rgba(168,60,60,0.9);
+   position: absolute;
+     bottom: 0;
+     left: 0;
+  top: 0;
+  right: 0;
+}
+.nom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.marechal .nom a{
+   font-size: 19px;
+color: #f9d509;
+  }
+  .marechal .nom a:hover{
+    text-decoration: underline;
+    color:darkblue;
+  }
+
+.container .civile .box_photo img{
+ display:inline-block;
+  width:25rem;
+  height:25rem;
+   transition: transform .2s;
+   border-radius:10px 10px;
+}
+ 
+.box_photo img:hover {
+    transform: scale(2);
+}
+.civile img:nth-child(even){
+  float:left;
+}
+.civile img:nth-child(odd){
+  float:right;
+}
+.civile h2:nth-child(odd){
+  padding-left:20rem;
+}
+
+.civile h2{
+  width:50%;
+  height:12.5rem;
+  padding-top:12.5rem;
+  text-align:center;
+}
+
+/* Style famille */
+
+.arbre ul {
+  position: relative; 
+  padding-top: 1.7%; 
+}
+.arbre li {
+  float: left; 
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  padding: 35px 0px 10px 5px;
+}
+.arbre li a{
+  border: 1px solid #071C1F;
+  padding: 12px 12px;
+  color: darkred;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 5px;
+}
+ .arbre{
+  display:inline-block;
+ }
+.arbre img{
+  width:30px;
+  height:30px;
+}
+ .arbre img:hover{
+  transform: scale(6);
+  z-index:999;
+ }
+ 
+.arbre li::before, .arbre li::after{
+  content: '';
+  position: absolute;
+  right: 50%;
+   width: 50%; 
+  height: 35px;
+   top: 0;
+   border-top: 1px solid #071C1F;
+}
+.arbre li::after{
+  right: auto;
+   left: 50%;
+  border-left: 1px solid #071C1F;
+}
+  .arbre li:only-child::after, .arbre li:only-child::before {
+    display: none;
+  }
+  .arbre .napoleon2,
+  .arbre .napoleon3{
+    padding-top:18px;
+  }
+ 
+.arbre li:first-child::before, .arbre li:last-child::after{
+  border: 0 none;
+}
+.arbre li:last-child::before{
+  border-right: 1px solid #071C1F  ;
+  border-radius: 0 5px 0 0;
+}
+
+.arbre ul ul::before{
+  content: '';
+  position: absolute;
+   top: 0; 
+   left: 50%;
+  border-left: 1px solid #071C1F;
+  width: 0; height: 20px;
+}
+ .arbre li a:hover, .arbre li a:hover+ul li a {
+    border: 1px solid #071C1F;
+  background-color: rgba(168,60,60,0.9);
+color: #f9d509;
+}
+#famille{
+width:80%;
+}
+.arbre .napo_arbre img{
+width:38px;
+height:38px;
+}
+.arbre .napo_arbre a{
+  font-size:20px;
+
+}
+/*arbre généalogique fin*/
+/*Style animation militaire waterloo*/
+.champbataille{
+  border: solid 1px red;
+  width:100%; 
+  position: relative;
+  height:300px;
+  display:inline-block;
+  display:block;
+  animation: eclair 25s infinite;
+  
+}
+.tableau_guerre #shema{
+  display:block;
+  margin-bottom:5%;
+}
+.champbataille span{
+  text-align: center;
+  
+}
+.france1{
+  width:60px;
+  height:60px;
+  background-color:blue;
+position:absolute;
+top:2px;
+right:2%;
+animation: france 25s infinite;
+
+}
+.france2{
+  width:60px;
+  height:60px;
+  background-color:blue;
+position:absolute;
+top:62px;
+right:2%;
+animation: france2 25s infinite;
+   
+}
+.france3{
+  width:60px;
+  height:60px;
+  background-color:blue;
+position:absolute;
+top:122px;
+right:2%;
+animation: france3 25s infinite;
+}
+.france_renf{
+  width:60px;
+  height:60px;
+  background-color:blue;
+position:absolute;
+top:202px;
+right:2%;
+animation: france_renf 25s infinite;
+animation-fill-mode: forwards;
+}
+.autriche1{
+  width: 60px;
+  height:60px;
+  position:absolute;
+  top:0px;
+  right:10px:;
+  background-color:green;
+animation: autr 25s infinite;
+}
+.autriche2{
+  width: 60px;
+  height:60px;
+  position:absolute;
+  top:60px;
+  left:0px:;
+  background-color:green;
+animation: autr2 25s infinite;
+}
+.autriche3{
+  width: 60px;
+  height:60px;
+  position:absolute;
+  top:120px;
+  left:10px:;
+  background-color:green;
+animation: autr3 25s infinite;
+}
+.autriche_renf{
+  width: 60px;
+  height:60px ;
+  position:absolute;
+  top:200px;
+  left:10px:;
+  background-color:green;
+   animation: autr_renf 25s infinite;
+}
+.foret1{
+  border-radius: 50%;
+  background-color: green;
+  opacity: 0.3;
+  width:150px;
+  height:150px;
+  position:absolute;
+  top:10% ;
+  left:20%;
+}
+.foret2{
+  border-radius: 50%;
+  background-color: green;
+  opacity: 0.3;
+  width:200px;
+  height:200px;
+  position:absolute;
+  top:4px;
+  right:20%;
+}
+.foret1 span{
+  padding-top:60px;
+}
+.foret2 span{
+padding-top:90px;
+}
+
+@keyframes autr {
+   0%{left:10%;}
+   25%{left:15%;}
+   50%{left:25%;}
+   75%{left:35%;}
+   100%{left:50%;}
+}
+@keyframes autr2 {
+   0%{left:10%;}
+   25%{left:20%;}
+   50%{left:40%;}
+   75%{left:50%;}
+   100%{left:70%;}
+}
+@keyframes autr3 {
+   0%{left:10%;}
+   25%{left:20%;}
+   50%{left:50%;}
+   75%{left:80%;display:none;}
+   100%{}
+}
+@keyframes autr_renf {
+   0%{left:10%;}
+   25%{left:20%;}
+   50%{left:30%;}
+   75%{left:60%;}
+   100%{left:90%;}
+}
+@keyframes france {
+   0%{right:10%;}
+   25%{right:15%;}
+   50%{right:25%;}
+   75%{right:60%;display: none;visibility: hidden;}
+   100%{display:none;}
+}
+@keyframes france2 {
+   0%{right:10%;}
+   25%{right:15%;}
+   50%{right:35%;}
+   100%{right:50%;}
+}
+@keyframes france3 {
+   0%{right:10%;}
+   25%{right:20%;}
+   50%{right:50%;}
+   75%{right:60%;}
+   100%{right:80%;}
+}
+@keyframes france_renf {
+   0%{right:10%;}
+   25%{right:20%;}
+   50%{right:30%;}
+   75%{right:50%;display:none;}
+   100%{}
+}
+@keyframes eclair {
+   0%{}
+   25%{}
+   28%{background-color:white;}
+   59%{background-color: red;}
+   60%{background-color:white;}
+   61%{background-color: red;}
+   62%{background-color:white;}
+   63%{background-color: red;}
+   64%{background-color:white;}
+   65%{background-color: red;}
+   66%{background-color:white;}
+   67%{background-color: red;}
+   68%{background-color:white;}
+   69%{background-color: red;}
+   70%{background-color:white;}
+   71%{background-color: red;}
+   72%{background-color:white;}
+   73%{background-color: red;}
+   74%{background-color:white;}
+   75%{background-color: red;}
+   76%{background-color:white;}
+   77%{background-color: red;}
+   78%{background-color:white;}
+   100%{}
+}
+/*Fin style militaire waterloo*/
+/*Media queries*/
+
+@media only screen and (max-width: 600px) {
+    body .container {
+       width:100%;
+    }
+.tableau_guerre div{
+  display:flex;
+  flex-direction: column;
+}
+.tableau_guerre video{
+  width:100%;
+  float: none;
+}
+#famille{
+  width:250%;
+}
+.arbre img{
+  display:none;
+}
+.galerie_marechaux > div > img{
+  width:100%;
+}
+.civile h2{
+  width:40%;
+}
+.arbre{
+  width:100%;
+}
+body .container{
+  padding-left:0px;
+  padding-right: 0px;
+}
+.arbre ul{
+  padding-top:0.2%;
+}
+.contact{
+  background:none;
+}
+.napo_cheval:hover,
+.napo_trone:hover {
+    transform: scale(1.5); 
+}
+}
+/*Fin media queries*/
